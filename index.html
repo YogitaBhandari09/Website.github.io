@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+    <title>Grid Page</title>
+    <style>
+        /* Adding basic responsive styles */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: #333;
+            color: white;
+        }
+
+        .nav-list {
+            list-style: none;
+            display: flex;
+            padding: 0;
+        }
+
+        .nav-list li {
+            margin: 0 10px;
+        }
+
+        .nav-list a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .logo img {
+            max-width: 100px;
+        }
+
+        .firstSection {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .box-main {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            width: 100%;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .box-main img {
+            width: 100%;
+            height: auto;
+        }
+
+        .third ul {
+            display: flex;
+            justify-content: center;
+            padding: 0;
+            list-style: none;
+        }
+
+        .third ul li {
+            width: 30px;
+            height: 30px;
+            margin: 5px;
+            background-color: #ccc;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+            color: white;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .navbar {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .nav-list {
+                flex-direction: column;
+            }
+
+            .nav-list li {
+                margin: 5px 0;
+            }
+
+            .logo img {
+                margin-bottom: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar background">
+        <div class="logo"><img src="img/logo.jpg" alt="logo"></div>
+        <ul class="nav-list">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="index.html">Grid</a></li>
+            <li><a href="https://www.linkedin.com/in/yogita-bhandari-9a632727a/" target="blank">LinkedIn</a></li>
+        </ul>
+    </nav>
+
+    <section class="background firstSection">
+        <div class="box-main">
+            <div class="first">
+                <img src="img/first.jpg" alt="First">
+            </div>
+            <div class="second">
+                <img src="img/logo.jpg" alt="Second">
+            </div>
+            <div class="third">
+                <ul>
+                    <li id="block"></li>
+                    <li id="block"></li>
+                    <li id="block"></li>
+                </ul>
+                <ul>
+                    <li id="block"></li>
+                    <li id="block"></li>
+                    <li id="block"></li>
+                </ul>
+                <ul>
+                    <li id="block"></li>
+                    <li id="block"></li>
+                    <li id="block"></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="centre">
+            Copyright &copy; All rights reserved
+        </div>
+    </footer>
+</body>
+</html>
