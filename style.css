@@ -127,7 +127,7 @@
     width: 150px;
     height: 150px;
     background-color: brown;
-    background-image: url(../Photo.jpg);
+    background-image: url(Photo.jpg);
     background-size: cover;
     background-position: center;
     border-radius: 50%;
