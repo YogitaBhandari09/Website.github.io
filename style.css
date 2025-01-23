@@ -50,7 +50,7 @@
 
 /* Background */
 .background {
-    background: rgb(0, 0, 0.7) url("../img/bg.jpg") no-repeat center center/cover;
+    background: rgb(0, 0, 0.7) url("../bg.jpg") no-repeat center center/cover;
 }
 
 /* Section */
@@ -127,7 +127,7 @@
     width: 150px;
     height: 150px;
     background-color: brown;
-    background-image: url(../img/Photo.jpg);
+    background-image: url(../Photo.jpg);
     background-size: cover;
     background-position: center;
     border-radius: 50%;
