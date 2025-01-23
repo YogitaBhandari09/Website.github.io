@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+    <title>Home Page</title>
+    <style>
+        /* Adding responsive styles */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: #333;
+            color: white;
+        }
+
+        .nav-list {
+            list-style: none;
+            display: flex;
+            padding: 0;
+        }
+
+        .nav-list li {
+            margin: 0 10px;
+        }
+
+        .nav-list a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .logo img {
+            max-width: 100px;
+        }
+
+        .profile {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        #photo {
+            width: 150px;
+            height: 150px;
+            background-color: #ccc;
+            border-radius: 50%;
+            margin: 10px;
+        }
+
+        #detail {
+            max-width: 500px;
+            margin: 10px;
+            text-align: center;
+        }
+
+        .btn {
+            background-color: #333;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+
+        .btn a {
+            color: white;
+            text-decoration: none;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+            color: white;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .navbar {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .nav-list {
+                flex-direction: column;
+            }
+
+            .nav-list li {
+                margin: 5px 0;
+            }
+
+            .logo img {
+                margin-bottom: 10px;
+            }
+
+            .profile {
+                flex-direction: column;
+            }
+
+            #photo {
+                margin-bottom: 20px;
+            }
+
+            #detail {
+                text-align: left;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar background">
+        <div class="logo"><img src="img/logo.jpg" alt="logo"></div>
+        <ul class="nav-list">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="index.html">Grid</a></li>
+            <li><a href="https://www.linkedin.com/in/yogita-bhandari-9a632727a/" target="_blank">LinkedIn</a></li>
+        </ul>
+    </nav>
+
+    <div class="profile">
+        <div id="photo"></div>
+        <div id="detail">
+            <p>Name: Yogita Bhandari</p>
+            <br>
+            <p>Registration No.: 20247060</p>
+            <br>
+            <hr>
+            <br>
+            <p>Instagram Account: <button class="btn"><a href="https://www.instagram.com/yogita_bhandari09/" target="_blank">Click Here</a></button></p>
+        </div>
+    </div>
+
+    <footer>
+        <div class="centre">
+            Copyright &copy; All rights reserved
+        </div>
+    </footer>
+</body>
+</html>
